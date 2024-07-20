@@ -1,0 +1,64 @@
+{
+  "name": "@jimmyxuexue/iconPack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "iconkit": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-d": "rollup -c"
+  },
+  "keywords": [
+    "icon",
+    "pack",
+		"android",
+		"ios"
+  ],
+  "author": "Jimmylxue <1002661758@qq.com> (https://github.com/Jimmylxue)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jimmylxue/iconpack.git"
+  },
+	"bugs": {
+    "url": "https://github.com/Jimmylxue/iconpack/issues"
+  },
+	"homepage": "https://github.com/Jimmylxue/iconpack",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.18.9",
+    "axios": "^1.7.2",
+    "ora": "5.4.1",
+    "sharp": "^0.33.4",
+    "svg2png": "^4.1.1",
+    "typescript": "^5.5.3"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
+    "@babel/preset-typescript": "^7.18.6",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-eslint": "^8.0.2",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@types/chalk": "2.2.0",
+    "@types/gm": "^1.25.4",
+    "@types/inquirer": "8.2.1",
+    "@types/jest": "^28.1.6",
+    "@types/svg2png": "^4.1.5",
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
+    "jest-environment-jsdom": "^29.3.1",
+    "rollup": "^2.64.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.32.1",
+    "ts-jest": "^28.0.7",
+    "tslib": "^2.4.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
