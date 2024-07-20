@@ -22,7 +22,7 @@ iconkit 是一个轻量级、多功能、且简单的生成 App icon 的库，�
 
 有了它我们可以一键快速完成上面操作，不求人！
 
-![image-20240720131059269](https://image.jimmyxuexue.top/img/image-20240720131059269.png)
+![image-20240720134450827](https://image.jimmyxuexue.top/img/image-20240720134450827.png)
 
 执行之后项目路径下会生成对应的矩形图标和圆角图标
 
