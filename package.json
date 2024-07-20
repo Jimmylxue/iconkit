@@ -1,10 +1,10 @@
 {
-  "name": "@jimmyxuexue/iconPack",
-  "version": "1.0.0",
+  "name": "iconkits",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "bin": {
-    "iconkit": "./bin/index.js"
+    "iconkits": "./bin/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

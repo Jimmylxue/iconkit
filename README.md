@@ -1,10 +1,10 @@
 <br>
 
-<h1 align="center">Welcome to iconkit 👋</h1>
+<h1 align="center">Welcome to iconkits 👋</h1>
 
 <br>
 
-iconkit 是一个轻量级、多功能、且简单的生成 App icon 的库，只需要提供一个资源路径（svg），即可生成全尺寸 App 图标
+iconkits 是一个轻量级、多功能、且简单的生成 App icon 的库，只需要提供一个资源路径（svg），即可生成全尺寸 App 图标
 
 > issues 是第一生产力！😄
 
@@ -22,7 +22,7 @@ iconkit 是一个轻量级、多功能、且简单的生成 App icon 的库，�
 
 有了它我们可以一键快速完成上面操作，不求人！
 
-![image-20240720134450827](https://image.jimmyxuexue.top/img/image-20240720134450827.png)
+![image-20240720134858171](https://image.jimmyxuexue.top/img/image-20240720134858171.png)
 
 执行之后项目路径下会生成对应的矩形图标和圆角图标
 
@@ -35,21 +35,21 @@ iconkit 是一个轻量级、多功能、且简单的生成 App icon 的库，�
 1. 安装
 
 ```
-pnpm add iconkit
+pnpm add iconkits
 ```
 
 2. 运行
 
 ```
-npx iconkit --input=<your source path>
+npx iconkits --input=<your source path>
 ```
 
 这块资源路径支持相对路径、绝对路径、远程路径。
 
 ```
-npx iconkit --input=./splash.svg
-npx iconkit --input=/User/Jimmy/Desktop/splash.svg
-npx iconkit --input=http://image.jimmyxuexue.top/img/splash.svg
+npx iconkits --input=./splash.svg
+npx iconkits --input=/User/Jimmy/Desktop/splash.svg
+npx iconkits --input=http://image.jimmyxuexue.top/img/splash.svg
 ```
 
 **ps：目前仅支持 svg 的图片文件**
