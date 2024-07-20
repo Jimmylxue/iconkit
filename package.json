@@ -1,6 +1,6 @@
 {
   "name": "iconkits",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "bin": {
@@ -31,8 +31,7 @@
     "axios": "^1.7.2",
     "ora": "5.4.1",
     "sharp": "^0.33.4",
-    "svg2png": "^4.1.1",
-    "typescript": "^5.5.3"
+    "svg2png": "^4.1.1"
   },
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.18.9",
@@ -56,7 +55,8 @@
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.32.1",
     "ts-jest": "^28.0.7",
-    "tslib": "^2.4.0"
+    "tslib": "^2.4.0",
+    "typescript": "^5.5.3"
   },
   "publishConfig": {
     "access": "public"

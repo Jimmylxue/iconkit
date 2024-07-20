@@ -1,7 +1,8 @@
 import svg2png from 'svg2png'
 import sharp from 'sharp'
 import { resolve } from 'path'
-import { writeFile, mkdir, stat } from 'fs/promises'
+import { writeFile, mkdir } from 'fs/promises'
+import { existsSync } from 'fs'
 import {
 	GENERATE_CIRCLE_ICON_ERROR,
 	GENERATE_SOURCE_ERROR,
@@ -51,7 +52,7 @@ export async function svgHandle() {
 			})
 
 			const dirPath = resolve(process.cwd(), item.dirname)
-			if (!stat(dirPath)) {
+			if (!existsSync(dirPath)) {
 				await mkdir(dirPath)
 			}
 
