@@ -61,6 +61,7 @@ npx iconkits --input=http://image.jimmyxuexue.top/img/splash.svg
 
 ## Todo
 
+- [ x ] 支持自定义生成文件位置配置
 - [ ] 生成 IOS 图标
 - [ ] 支持除 svg 外的文件生成 icon
 - [ ] ......

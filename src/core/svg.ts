@@ -44,6 +44,8 @@ function shapeFn(
 
 export async function svgHandle() {
 	try {
+		const outputBaseDir = argument['--output'] || './'
+
 		const sourceBuffer = argument.sourceBuffer!
 		for (const item of resourceMap) {
 			const pngBuffer = await svg2png(sourceBuffer, {
@@ -51,19 +53,19 @@ export async function svgHandle() {
 				height: item.size,
 			})
 
-			const dirPath = resolve(process.cwd(), item.dirname)
+			const dirPath = resolve(process.cwd(), outputBaseDir, item.dirname)
 			if (!existsSync(dirPath)) {
-				await mkdir(dirPath)
+				// recursive:true 创建深层级的目录
+				await mkdir(dirPath, { recursive: true })
 			}
-
 			await writeFile(
-				resolve(process.cwd(), item.dirname, squareName),
+				resolve(process.cwd(), outputBaseDir, item.dirname, squareName),
 				pngBuffer
 			)
 			await shapeFn(
 				item.size,
-				resolve(process.cwd(), item.dirname, squareName),
-				resolve(process.cwd(), item.dirname, roundName)
+				resolve(process.cwd(), outputBaseDir, item.dirname, squareName),
+				resolve(process.cwd(), outputBaseDir, item.dirname, roundName)
 			)
 			otherSpinner.succeed(`✅ Generate Success In ${item.dirname}`)
 		}

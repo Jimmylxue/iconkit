@@ -3,6 +3,7 @@ export type TUserInputArgument = {
 };
 export type TArgument = {
     '--input'?: string;
+    '--output'?: string;
     pathType?: 'remote' | 'relative' | 'absolute';
     sourceBuffer?: Buffer;
     updateSourceBuffer: (buffer: Buffer) => void;

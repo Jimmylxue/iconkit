@@ -10,6 +10,7 @@ import {
 
 export const argument: TArgument = {
 	sourceBuffer: undefined,
+	'--output': './android/app/src/main/res',
 	updateSourceBuffer(buffer) {
 		this.sourceBuffer = buffer
 	},
@@ -43,6 +44,9 @@ export async function checkArgument(userInputArgs: TUserInputArgument) {
 		argument['--input'] = userInputArgs['--input']
 		argument.pathType = checkPathType(userInputArgs['--input'])
 		await getInputSource()
+	}
+	if (userInputArgs['--output']) {
+		argument['--output'] = userInputArgs['--output']
 	}
 }
 
