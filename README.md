@@ -22,11 +22,11 @@ iconkits 是一个轻量级、多功能、且简单的生成 App icon 的库，�
 
 有了它我们可以一键快速完成上面操作，不求人！
 
-![image-20240720134858171](https://image.jimmyxuexue.top/img/image-20240720134858171.png)
+<img width="675" alt="image-20240720134858171" src="https://github.com/user-attachments/assets/90e0a90a-27d9-4afb-a778-207313b2ba9a" />
 
 执行之后项目路径下会生成对应的矩形图标和圆角图标
 
-![image-20240720131246947](https://image.jimmyxuexue.top/img/image-20240720131246947.png)
+<img width="414" alt="image-20240720131246947" src="https://github.com/user-attachments/assets/3438456a-46c3-44f9-9b37-b2813561fec7" />
 
 之后我们再将这些图标替换到安卓项目下图标即可。
 
